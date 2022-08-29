@@ -1,0 +1,21 @@
+\mode<presentation>
+
+% Frame title
+\defbeamertemplate*{frametitle}{chalmers}[1][]
+{
+\vskip1cm%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=1.2cm]{frametitle} 
+  \begin{tikzpicture}
+  \useasboundingbox (0,-0.5) rectangle(\the\paperwidth,1.4);
+
+   \ifx\insertframesubtitle\@empty%
+      {\node[anchor=west, main,font=\large\bf, text width=8cm, align=flush left] at (1.2,0.61){\insertframetitle};}
+      \else%
+      {\node[anchor= west, main,font=\large\bf, text width=8cm, align=flush left] at (1.2,0.81){\insertframetitle};%
+       \node[anchor= west, main,font=\small\bf] at (1.21,0.21){\insertframesubtitle};}%
+      \fi
+  \end{tikzpicture}
+  \end{beamercolorbox}
+  \vspace{-1cm}
+}
+

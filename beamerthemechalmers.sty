@@ -1,0 +1,32 @@
+\mode<presentation>
+
+% Requirement
+\RequirePackage{tikz}
+
+% Settings
+\useinnertheme{chalmers}
+\useoutertheme{chalmers}
+\usecolortheme{chalmers}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=true]  
+\setbeamertemplate{footline}[frame number]
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{section in toc}[ball unnumbered]
+\setbeamerfont{section in toc}{size*={12}{12},series=\bfseries}
+\setbeamerfont{section title}{size*={12}{12},series=\bfseries}
+\setbeamerfont{footnote}{size*={8}{8}}
+\AtBeginSection[]{
+   \begin{frame}
+   \vfill
+   \centering
+   \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+     \usebeamerfont{title}\usebeamercolor[fg]{section name}
+\insertsectionhead\par%
+   \end{beamercolorbox}
+   \vfill
+   \end{frame}
+ }
+\mode<all>
+
